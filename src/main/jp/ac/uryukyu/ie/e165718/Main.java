@@ -2,13 +2,13 @@ package jp.ac.uryukyu.ie.e165718;
 
 public class Main {
     public static void main(String[] args) {
-        String str = "3．14";
-        double value = Double.parseDouble(str);
+        String str = null;
         try {
-            System.out.printf("%s\n",str.length());
+            System.out.println(str.length());
         } catch (NullPointerException e) {
-            System.out.println("NullPointerExceptionが発生した\n");
+            System.out.println("NullPointerExceptionが発生した");
             e.printStackTrace();
         }
+        double value = Double.parseDouble(str);
     }
 }
